@@ -1,44 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login Page</title>
-    <link rel="stylesheet" href="login.css">
-</head>
-<body>
-    <div class="login-container" id="user-login">
-        <h2>GreenMart User Login</h2>
-        <div class="input-group">
-            <label class="text-title" for="username">Username</label>
-            <input type="text" id="username" placeholder="Enter username">
-        </div>
-        <div class="input-group">
-            <label class="text-title" for="password">Password</label>
-            <input type="password" id="password" placeholder="Enter password">
-        </div>
-        <button id="btn-1" class="btn" onclick="login()">Login</button>
-        <div class="admin-link">
-            <a href="#" id="admin-login-link">Admin Login</a>
-        </div>
-    </div>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Login Page</title>
+        <link rel="stylesheet" href="login.css">
+    </head>
 
-    <div class="login-container" id="admin-login" style="display: none;">
-        <h2>GreenMart Admin Login</h2>
-        <div class="input-group">
-            <label class="text-title" for="admin-username">Username</label>
-            <input type="text" id="admin-username" placeholder="Enter username">
+    <body>
+        <div class="login-container" id="user-login">
+            <h2>GreenMart User Login</h2>
+            <div class="input-group">
+                <label class="text-title" for="username">Username</label>
+                <input type="text" id="username" placeholder="Enter username">
+            </div>
+            <div class="input-group">
+                <label class="text-title" for="password">Password</label>
+                <input type="password" id="password" placeholder="Enter password">
+            </div>
+            <button id="btn-1" class="btn" onclick="login()">Login</button>
+            <div class="admin-link">
+                <a href="#" id="admin-login-link">Admin Login</a>
+            </div>
         </div>
-        <div class="input-group">
-            <label class="text-title" for="admin-password">Password</label>
-            <input type="password" id="admin-password" placeholder="Enter password">
-        </div>
-        <button id="btn-2" class="btn" onclick="login()">Login</button>
-        <div class="admin-link">
-            <a href="#" id="user-login-link">User Login</a>
-        </div>
-    </div>
 
-    <script src="login.js"></script>
-</body>
+        <div class="login-container" id="admin-login" style="display: none;">
+            <h2>GreenMart Admin Login</h2>
+            <div class="input-group">
+                <label class="text-title" for="admin-username">Username</label>
+                <input type="text" id="admin-username" placeholder="Enter username">
+            </div>
+            <div class="input-group">
+                <label class="text-title" for="admin-password">Password</label>
+                <input type="password" id="admin-password" placeholder="Enter password">
+            </div>
+            <button id="btn-2" class="btn" onclick="login()">Login</button>
+            <div class="admin-link">
+                <a href="#" id="user-login-link">User Login</a>
+            </div>
+        </div>
+    </body>
+    <script type="module" src="./login.js"></script>
 </html>
