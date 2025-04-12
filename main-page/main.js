@@ -28,18 +28,27 @@ card.style.display = card.dataset.category === category ? 'block' : 'none';
 
     });
 
-    let cart = [];
+   // Initialize cart array
+let cart = [];
 
-    function addToCart(productName) {
+// Function to add items to the cart
+function addToCart(productName) {
+    cart.push(productName);
+    
+    // Update the cart icon count dynamically
+    updateCartIcon();
+}
 
-        cart.push(productName);
-
-        alert(`${productName} added to cart!`);
-
+// Function to update the cart icon count
+function updateCartIcon() {
+    const cartCount = document.getElementById('cart-count');
+    if (cartCount) {
+        cartCount.textContent = cart.length; // Update count based on cart length
     }
+}
 
-    function showCart() {
+// Function to redirect to the cart page
+function redirectToCart() {
+    window.location.href = '../cart-page/cart.html';
+}
 
-        alert(`Cart Items:\n${cart.join('\n')}`);
-
-    }
