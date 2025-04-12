@@ -29,7 +29,7 @@
     <div class="products-grid">
         <div class="product-card" data-category="dairy">
             <h3>ORGANIC MILK</h3>
-            <img src="C:\Users\KIIT\Desktop\pg\pictures\milk.jpg" alt="Organic Milk" style="width: 200px; height: 200px;">
+            <img id="milkId" alt="Organic Milk" style="width: 200px; height: 200px;">
             <p>Fresh Organic Milk - 1L</p>
             <p>Price: ₹80</p>
             <button onclick="addToCart('Organic Milk')">Add to Cart</button>
@@ -37,7 +37,7 @@
 
         <div class="product-card" data-category="dairy">
             <h3>EGGS</h3>
-            <img src="C:\Users\KIIT\Desktop\pg\pictures\eggs.jpg" alt="Eggs" style="width: 200px; height: 200px;">
+            <img id="eggsId" alt="Eggs" style="width: 200px; height: 200px;">
             <p>Farm Fresh Eggs - 12 pcs</p>
             <p>Price: ₹60</p>
             <button onclick="addToCart('Eggs')">Add to Cart</button>
@@ -45,7 +45,7 @@
 
         <div class="product-card" data-category="dairy">
             <h3>PANEER</h3>
-            <img src="C:\Users\KIIT\Desktop\pg\pictures\paneer.jpg" alt="Paneer" style="width: 200px; height: 200px;">
+            <img id="paneerId" alt="Paneer" style="width: 200px; height: 200px;">
             <p>Fresh Paneer - 200g</p>
             <p>Price: ₹100</p>
             <button onclick="addToCart('Paneer')">Add to Cart</button>
@@ -53,7 +53,7 @@
 
         <div class="product-card" data-category="dairy">
             <h3>LASSI</h3>
-            <img src="C:\Users\KIIT\Desktop\pg\pictures\lassi.jpg" alt="Lassi" style="width: 200px; height: 200px;">
+            <img id="lassiId" alt="Lassi" style="width: 200px; height: 200px;">
             <p>Refreshing Lassi - 500ml</p>
             <p>Price: ₹50</p>
             <button onclick="addToCart('Lassi')">Add to Cart</button>
@@ -61,7 +61,7 @@
 
         <div class="product-card" data-category="dairy">
             <h3>BUTTERMILK</h3>
-            <img src="C:\Users\KIIT\Desktop\pg\pictures\buttermilk.jpg" alt="Buttermilk" style="width: 200px; height: 200px;">
+            <img id="buttermilkId" alt="Buttermilk" style="width: 200px; height: 200px;">
             <p>Cold Buttermilk - 500ml</p>
             <p>Price: ₹40</p>
             <button onclick="addToCart('Buttermilk')">Add to Cart</button>
@@ -69,7 +69,7 @@
 
         <div class="product-card" data-category="beverages">
             <h3>MINERAL WATER</h3>
-            <img src="C:\Users\KIIT\Desktop\pg\pictures\water.jpg" alt="MINERAL WATER" style="width: 200px; height: 200px;">
+            <img id="waterId" alt="MINERAL WATER" style="width: 200px; height: 200px;">
             <p>Fresh Mineral Water</p>
             <p>Price: ₹15/Bottle</p>
             <button onclick="addToCart('FRESH MINERAL WATER')">Add to Cart</button>
@@ -78,7 +78,7 @@
 
         <div class="product-card" data-category="beverages">
             <h3>COKE</h3>
-            <img src="C:\Users\KIIT\Desktop\pg\pictures\coke.jpg" alt="COKE" style="width: 200px; height: 200px;">
+            <img id="cokeId" alt="COKE" style="width: 200px; height: 200px;">
             <p>Refreshing Coke</p>
             <p>Price: ₹30/Can</p>
             <button onclick="addToCart('COKE')">Add to Cart</button>
@@ -87,7 +87,7 @@
 
         <div class="product-card" data-category="beverages">
             <h3>SODA</h3>
-            <img src="C:\Users\KIIT\Desktop\pg\pictures\golisoda.jpg" alt="SODA" style="width: 200px; height: 200px;">
+            <img id="golisodaId" alt="SODA" style="width: 200px; height: 200px;">
             <p>Refreshing Soda </p>
             <p>Price: ₹15/Bottle</p>
             <button onclick="addToCart('GOLI-SODA')">Add to Cart</button>
@@ -96,7 +96,7 @@
 
         <div class="product-card" data-category="beverages">
             <h3>COFFEE BEANS</h3>
-            <img src="C:\Users\KIIT\Desktop\pg\pictures\coffee.jpg" alt="COFFEE" style="width: 200px; height: 200px;">
+            <img id="coffeeId" alt="COFFEE" style="width: 200px; height: 200px;">
             <p>Pure Coffee Beans</p>
             <p>Price: ₹50/KG</p>
             <button onclick="addToCart('COFFEE-BEANS')">Add to Cart</button>
@@ -104,7 +104,7 @@
 
         <div class="product-card" data-category="produce">
             <h3>FRESH APPLES</h3>
-            <img src="C:\Users\KIIT\Desktop\pg\pictures\apple.jpg" alt="FRESHAPPLES"        style="width: 200px; height: 200px;">
+            <img id="appleId" alt="FRESHAPPLES" style="width: 200px; height: 200px;">
             <p>Organic Kashmiri Apples</p>
             <p>Price: ₹120/KG</p>
             <button onclick="addToCart('Fresh Apples')">Add to Cart</button>
@@ -112,8 +112,7 @@
 
         <div class="product-card" data-category="produce">
             <h3>MANGOES</h3>
-            <img src="C:\Users\KIIT\Desktop\pg\pictures\mango.jpg" alt="MANGOES"
-                style="width: 200px; height: 200px;">
+            <img id="mangoId" alt="MANGOES" style="width: 200px; height: 200px;">
             <p>Fresh Exotic Mangoes</p>
             <p>Price: ₹150/KG</p>
             <button onclick="addToCart('Fresh MANGOES')">Add to Cart</button>
@@ -121,8 +120,7 @@
 
         <div class="product-card" data-category="produce">
             <h3>ORANGE</h3>
-            <img src="C:\Users\KIIT\Desktop\pg\pictures\oranges.jpg" alt="ORANGES"
-                style="width: 200px; height: 200px;">
+            <img id="orangesId" alt="ORANGES" style="width: 200px; height: 200px;">
             <p>Fresh Oranges</p>
             <p>Price: ₹60/KG</p>
             <button onclick="addToCart('ORANGES')">Add to Cart</button>
@@ -130,8 +128,7 @@
 
         <div class="product-card" data-category="produce">
             <h3>BANANA</h3>
-            <img src="C:\Users\KIIT\Desktop\pg\pictures\banana.jpg" alt="BANANA"
-                style="width: 200px; height: 200px;">
+            <img id="bananaId" alt="BANANA" style="width: 200px; height: 200px;">
             <p>Fresh Bananas</p>
             <p>Price: ₹60/KG</p>
             <button onclick="addToCart('BANANA')">Add to Cart</button>
@@ -139,8 +136,7 @@
 
         <div class="product-card" data-category="produce">
             <h3>POMOGRANATE</h3>
-            <img src="C:\Users\KIIT\Desktop\pg\pictures\pomegranate.jpg" alt="Pomegranate"
-                style="width: 200px; height: 200px;">
+            <img id="pomegranateId" alt="Pomegranate" style="width: 200px; height: 200px;">
             <p>Fresh Pomegranate</p>
             <p>Price: ₹50/KG</p>
             <button onclick="addToCart('Pomegranate')">Add to Cart</button>
@@ -152,6 +148,27 @@
         <p>© 2025 GreenMart. All rights reserved.</p>
     </footer>
 
+    <script type="module">
+        import { IMAGE_BASE_URL } from '../config/config.js';
+        const imageIdList = [
+            'milkId',
+            'eggsId',
+            'paneerId',
+            'lassiId',
+            'buttermilkId',
+            'waterId',
+            'cokeId',
+            'golisodaId',
+            'coffeeId',
+            'appleId',
+            'mangoId',
+            'orangesId',
+            'bananaId',
+            'pomegranateId'
+        ];
+
+        imageIdList.forEach(id => document.getElementById(id).src = `${IMAGE_BASE_URL}/${id.slice(0, -2)}.jpg`);
+    </script>
     <script src="main.js"></script>
 </body>
 
