@@ -37,5 +37,3 @@ function login() {
         document.getElementById('password').value = '';
     }
 }
-
-
